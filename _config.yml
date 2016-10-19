@@ -20,6 +20,7 @@ baseurl: "/blacksquare" # the subpath of your site, e.g. /blog
 url: "http://aevista.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: aevista
 github_username:  aevista
+alt: blacksquare
 
 # Build settings
 markdown: kramdown
