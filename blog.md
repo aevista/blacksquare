@@ -1,0 +1,15 @@
+---
+layout: index
+title: Blog 
+type: page
+date: 2016-10-19 17:31:22 -0500
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

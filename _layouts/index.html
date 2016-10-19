@@ -1,15 +1,19 @@
 <html>
   <head>
-    
+    <meta content='{{ page.title }} - {{ site.title }}' name='title' />
     <title>{{ site.title }}</title>
       {% include head.html %}
   </head>
   <body>
     {% include header.html %}
     <div id='container'>
-      
+      {% include links.html %}
       <div class="content">
-        {{ content }}
+        {% if page.type == "page" or page.type == "post" %}
+          {% include page.html %}
+        {% else %}
+          {{ content }}
+        {% endif %}
       </div>
     </div>
     {% include footer.html %}

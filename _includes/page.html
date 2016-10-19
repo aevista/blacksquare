@@ -1,0 +1,9 @@
+<section class='post'>
+    {% if page.type == "post" %}
+         {% include post.html %}
+    {% else %}
+        <h1>{{ page.title }}</h1>
+    {% endif %}
+
+    {{ content }}
+</section>
